@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memmory Game</title>
+    <link rel="stylesheet" type="text/css" href="eL3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<script defer src="eL3.js"></script>
+</head>
+<body>
+    <div class="head">
+        <h2>Memmory Game</h2>
+        <div class="score">Score: <span>0</span></div>
+    </div>
+
+    <div class="container" >
+        <div class="cell">
+            <div class="front" data-index="1"><img src="images/Burger.png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="1"><img src="images/Burger (2).png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="2"><img src="images/Nut.png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="2"><img src="images/nut (2).png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="3"><img src="images/Aeroplane.png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="3"><img src="images/Aeroplane (2).png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="4"><img src="images/Juice.png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="4"><img src="images/Juice (2).png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="5"><img src="images/Pizza.png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="5"><img src="images/Pizza (2).png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="6"><img src="images/House.png" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="6"><img src="images/House (2).png" alt=""></div>
+            <div class="back"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button type="submit" class="btn" onclick ="openPopup()">SUBMIT</button>
+        <div class="popup" id="popup">
+            <img src="./images/celeb.png">
+            <h2>Congrats! Level 3 Completed</h2>
+            <button type="button" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+<script>
+    let popup=document.getElementById("popup");
+    function openPopup(){
+     popup.classList.add("open-popup");   
+    }
+    function closePopup(){
+     popup.classList.remove("open-popup");   
+    }
+    
+</script>   
+   
+</body>
+</html>

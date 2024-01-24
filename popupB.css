@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+}
+h2{
+    position: relative;
+    font-size: 14vw;
+    color: #252839;
+    -webkit-text-stroke:0.3vw #383d52;
+    text-transform:uppercase;
+}
+
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke:0vw #383d52;
+    border-right: 2px soild #01fe87;
+    overflow:hidden;
+    animation: animate 6s linear infinite;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Move content to the left */
+    align-items: center;
+    min-height: 100vh;
+    background: #97dc0e;
+    font-size: 25px;
+    font-family: courier;
+    font-weight: 800;
+}
+
+
+
+@keyframes speech {
+    0% { top: -20px; }
+    25% { top: 5px; box-shadow: 7px 40px 40px #000108; }
+    50% { top: 20px; }
+    75% { top: -20px; box-shadow: 7px -10px 50px #000108; }
+    100% { top: 0; }
+}
+.container {
+    display: flex;
+    align-items: center; /* Vertically center the box and text */
+  }
+
+.box {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    background: linear-gradient(#22c96a, #26d092);
+    border-radius: 50%;
+    border: 10px solid #fff;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .8),
+                 0 20px 100px rgba(0, 0, 0, .8);
+    overflow: hidden;
+    margin-left: 50px; /* Adjust the margin to move the box to the left */
+}
+
+.ball img {
+    position: relative;
+    z-index: 9;
+}
+
+.text {
+    margin-left: 100px; /* Add space between the box and text */
+    font-size: 80px; /* Adjust the font size as needed */
+    color: #0a0a0a; /* Set text color */
+    animation: bounce 2s infinite;
+  }
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+    }
+    50% {
+        transform: translateY(-20px); /* Middle position (bounce up) */
+    }
+}
+
+  
+  
+  
+  
+  
+  

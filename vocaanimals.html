@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vocaanimals.css">
+    <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
+    <style>
+        /* Add CSS to align the text at the top */
+        .menu .top-align {
+            vertical-align: top;
+            margin: 100; /* Reset default margin */
+        }
+    </style>
+    
+    <title>Animals</title>
+</head>
+<body>
+
+    <div class="container">
+        <h3 class="headeing">LEARN ANIMALS</h3>  <!--title--> 
+        <div class="menu-container">      <!--products-container--> 
+
+            <div class="menu" data-name="p-1">  <!--product--> 
+                <img src="./images/horse.png" alt="imag">
+                <h3>HORSE</h3>
+               
+            </div>
+
+            <div class="menu" data-name="p-2">
+                <img src="./images/whale.png" alt="imag">
+                <h3>WHALE</h3>
+            </div>
+
+            <div class="menu" data-name="p-3">
+                <img src="./images/duck.png" alt="imag">
+                <h3>DUCK</h3>
+            </div>
+
+            <div class="menu" data-name="p-4">
+                <img src="./images/cow.png" alt="imag" >
+                <h3>COW</h3>
+            </div>
+
+            <div class="menu" data-name="p-5">
+                <img src="./images/cat.png" alt="imag">
+                <h3>CAT</h3>
+            </div>
+
+            <div class="menu" data-name="p-6">
+                <img src="./images/pig.png" alt="imag">
+                <h3>PIG</h3>
+            </div>
+            <div class="menu" data-name="p-7">
+                <img src="./images/zebra.png" alt="imag">
+                <h3>ZEBRA</h3>
+            </div>
+            <div class="menu" data-name="p-8">
+                <img src="./images/lion.png" alt="imag">
+                <h3>LION</h3>
+            </div>
+            <div class="menu" data-name="p-9">
+                <img src="./images/tiger.png" alt="imag">
+                <h3>TIGER</h3>
+            </div>
+            <div class="menu" data-name="p-10">
+                <img src="./images/dog.png" alt="imag">
+                <h3>DOG</h3>
+            </div>
+            <div class="menu" data-name="p-11">
+                <img src="./images/turtle.png" alt="imag" >
+                <h3 class="top-align">TURTLE</h3> 
+            </div>
+            <div class="menu" data-name="p-12">
+                <img src="./images/elephant.png" alt="imag">
+                <h3>ELEPHANT</h3>
+            </div>
+        </div>
+    </div>
+
+    
+<div class="menu-preview">   <!--products-preview-->
+
+       <div class="preview" data-target="p-1">
+        <i class="fa-solid fa-xmark"></i>
+        <img src="images/HORSE.gif" alt="" >
+        <audio id="horse-audio" src="./audio/horse.mp3"></audio>
+        <button onclick="toggleAudio('horse-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+        <h3>HORSE</h3>
+    </div>
+    
+    <script>
+        function toggleAudio(audioId) {
+            var audio = document.getElementById(audioId);
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+
+<div class="preview" data-target="p-2">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/whale.gif" alt="" style="width: 500px; height: 550px;" >
+    <audio id="whale-audio" src="./audio/whale.mp3"></audio>
+    <button onclick="toggleAudio('whale-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>WHALE</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+<div class="preview" data-target="p-3">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/duck.gif" alt="" style="width: 500px; height: 550px;">
+    <audio id="duck-audio" src="./audio/duck.mp3"></audio>
+    <button onclick="toggleAudio('duck-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>DUCK</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+<div class="preview" data-target="p-4">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/cow.gif" alt="">
+    <audio id="cow-audio" src="./audio/cow.mp3"></audio>
+    <button onclick="toggleAudio('cow-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>COW</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+
+
+<div class="preview" data-target="p-5">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/cat.gif" alt="" style="width: 500px; height: 550px;">
+    <audio id="cat-audio" src="./audio/cat.mp3"></audio>
+    <button onclick="toggleAudio('cat-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>CAT</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+<div class="preview" data-target="p-6">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/pig.gif" alt="" >
+    <audio id="pig-audio" src="./audio/pig.mp3"></audio>
+    <button onclick="toggleAudio('pig-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>PIG</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+<div class="preview" data-target="p-7">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/zebra.gif" alt="" style="width: 500px; height: 550px;">
+    <audio id="zebra-audio" src="./audio/zebra.mp3"></audio>
+    <button onclick="toggleAudio('zebra-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>ZEBRA</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+
+<div class="preview" data-target="p-8">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/lion.gif" alt="" style="width: 500px; height: 550px;">
+    <audio id="lion-audio" src="./audio/lion.mp3"></audio>
+    <button onclick="toggleAudio('lion-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>LION</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+<div class="preview" data-target="p-9">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/tiger.gif" alt="" >
+    <audio id="tiger-audio" src="./audio/tiger.mp3"></audio>
+    <button onclick="toggleAudio('tiger-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>TIGER</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+<div class="preview" data-target="p-10">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/dog.gif" alt="" style="width: 500px; height: 550px;">
+    <audio id="dog-audio" src="./audio/dog.mp3"></audio>
+    <button onclick="toggleAudio('dog-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>DOG</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+<div class="preview" data-target="p-11">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/turtle.gif" alt="">
+    <audio id="turtle-audio" src="./audio/turtle.mp3"></audio>
+    <button onclick="toggleAudio('turtle-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>TURTLE</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+<div class="preview" data-target="p-12">
+    <i class="fa-solid fa-xmark"></i>
+    <img src="images/ele.gif" alt="" >
+    <audio id="ele-audio" src="./audio/ele.mp3"></audio>
+    <button onclick="toggleAudio('ele-audio')"style="width: 100px; height: 40px; font-size: 16px;">Play Sound</button>
+    <h3>ELEPHANT</h3>
+</div>
+
+<script>
+    function toggleAudio(audioId) {
+        var audio = document.getElementById(audioId);
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+      
+ </div>
+
+
+ 
+
+    <script src="vocaanimals.js"></script>
+</body>
+</html>

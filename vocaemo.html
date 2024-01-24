@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMOTIONS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="vocaemo.css">
+  
+   
+
+  
+</head>
+
+<body>
+
+
+  <section class="gallery min-vh-100">
+     <div class="container-lg">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+           <div class="col">
+              <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb21mNTh2bmVtY2Vlc3VuejlsM3Z0ZzBmY2xteGFhNHNnbGd0bjY2dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9ZQ/QWvra259h4LCvdJnxP/giphy.gif" class="gallery-item" alt="gallery" data-audio="/audio/happy.mp3">
+              <p>HAPPY</p>
+           </div>
+           <div class="col">
+              <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmJudmQzdDV0ZTU5d2twZHBubXBwbzY4Z2k4NGhlbHhmMHZ1YjQ4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9ZQ/kyQfR7MlQQ9Gb8URKG/giphy.gif" class="gallery-item" alt="gallery" data-audio="/audio/angry.mp3">
+              <p>ANGRY</p>
+           </div>
+           <div class="col">
+              <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3J1MTZmanYxZXhraWRzdGlsamc3a294dno5NHZ6aGQ2bmJobTRvciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xYJhVe7tIy8KUZCwkW/giphy.gif" class="gallery-item" alt="gallery" data-audio= "/audio/sad.mp3">
+              <p>SAD</p>
+           </div>
+           <div class="col">
+              <img src="https://media.giphy.com/media/ykaNntbZ3hfsWotKmA/giphy.gif" class="gallery-item" alt="gallery" data-audio="/audio/cry.mp3" >
+              <p>CRY</p>
+           </div>
+           <div class="col">
+              <img src="https://gifdb.com/images/high/surprised-wow-emoji-oy9b0x29tgkaey9s.gif" class="gallery-item" alt="gallery" data-audio="/audio/surprise.mp3">
+              <p>SURPRISE</p>
+           </div>
+           <div class="col">
+              <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTJrZ2l6eWl1YnRnYWR0ZW5zdHc1aHh4emNkcGF4OTdpenc1azhkeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1xnermuoopn9DXGGy0/giphy.gif" class="gallery-item" alt="gallery" data-audio="/audio/fear.mp3">
+              <p>FEAR</p>
+           </div>
+           <div class="col">
+            <img src="./images/laugh.gif" class="gallery-item" alt="gallery" data-audio="file:///D:/SAMRUDDHI/SOFTWARES/Visual%20Studio%20code/Learning%20language/language/audio/laughing.mp3">
+            <p>LAUGH</p>
+         </div>
+         <div class="col">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNml2YmFpZ2J2ZXJhNThvcXlqazdocDE0M3A3cXB6cHp2MzJhajU4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WCzGme5RtmUM7Fhl9f/giphy.gif" class="gallery-item" alt="gallery" data-audio="/audio/confused.mp3">
+            <p>CONFUSE</p>
+         </div>
+         <div class="col">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHEzNHU3Ymprem5jNWMzOHk1NDBrMGFna3U0OXJqM3dqcTJ5ZXhuZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/dSCKIgGU8tyq7xL8yp/giphy.gif" class="gallery-item" alt="gallery" data-audio="/audio/love.mp3">
+            <p>LOVE</p>
+         </div>
+        </div>
+     </div>
+  </section>
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb21mNTh2bmVtY2Vlc3VuejlsM3Z0ZzBmY2xteGFhNHNnbGd0bjY2dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9ZQ/QWvra259h4LCvdJnxP/giphy.gif" class="modal-img" alt="modal img">
+        
+      </div> 
+    </div>
+  </div>
+</div>
+<script>
+   const gifs = document.querySelectorAll('.gallery-item');
+   let currentAudio;
+ 
+   gifs.forEach(gif => {
+     gif.addEventListener('click', function() {
+       const audioFile = this.getAttribute('data-audio');
+       if (audioFile) {
+         if (currentAudio) {
+           currentAudio.pause();
+         }
+         currentAudio = new Audio(audioFile);
+         currentAudio.play();
+       }
+     });
+   });
+ </script>
+ 
+
+
+
+
+<script src="bootstrap.bundle.min.js"></script>
+<script src="vocaemo.js"></script>
+</body>
+</html>

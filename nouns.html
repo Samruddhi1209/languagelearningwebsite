@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nouns</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./nouns.css">
+    <style>
+        h1 {
+            font-family: 'Comic Sans MS', cursive; /* Use a cartoon-style font or font stack */
+        }
+    </style>
+  </head>
+  <body>
+    <h1>NOUNS</h1>
+        <div class="image-container">
+            <div class="image-item" onclick="playAudio('file:///D:/SAMRUDDHI/SOFTWARES/Visual%20Studio%20code/Learning%20language/language/audio/boyperson.mp3')">
+                <img src="boys.jpg" alt="Image 1">
+                <p class="image-description">This boy is a person.</p>
+            </div>
+            <div class="image-item" onclick="playAudio('file:///D:/SAMRUDDHI/SOFTWARES/Visual%20Studio%20code/Learning%20language/language/audio/school.mp3')">
+                <img src="images/school.jpg" alt="Image 2">
+                <p class="image-description">This school is a place.</p>
+            </div>
+            <div class="image-item" onclick="playAudio('/audio/dog.mp3')">
+                <img src="images/dog1.jpg" alt="Image 3">
+                <p class="image-description">This dog is an animal.</p>
+            </div>
+            <div class="image-item" onclick="playAudio('audio/pencil.mp3')">
+                <img src="images/pencil.jpg" alt="Image 2">
+                <p class="image-description">This pencil is a thing.</p>
+            </div>
+        </div>
+         <div>
+            <p id="my-para">Words that are used to name a person, place, animal, bird or thing are naming words.
+            </p>
+         </div>
+         <div>
+            <p id="para">Such naming words are called nouns.</p>
+         </div>
+        <audio id="audio" controls style="display: none;">
+            <source src="" type="audio/mpeg">
+        </audio>
+    
+        <script>
+            function playAudio(audioFile) {
+                const audioElement = document.getElementById('audio');
+                const sourceElement = audioElement.querySelector('source');
+                sourceElement.src = audioFile;
+                audioElement.load();
+                audioElement.play();
+            }
+        </script>
+         <script src="nouns.js"></script>
+    </body>
+    </html>

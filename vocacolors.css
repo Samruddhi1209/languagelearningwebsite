@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    padding: 0;
+    background: blueviolet;
+}
+.banner-text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+.bg-wrapper{
+    position: absolute;
+    top:55%;
+    left:-90px;
+    padding: 6px;
+    background: #9d9d9d;
+    transform: rotate(90deg);
+    border-radius:25px ;
+}
+.bg-wrapper a{
+    text-indent: -99999px;
+    margin:5px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float:left;
+}
+#red
+{
+    background: #ff0000;
+}
+#blue
+{
+    background: #0000ff;
+}
+#black
+{
+    background: #000000;
+}
+#yellow
+{
+    background: #ffff00;
+}
+#green
+{
+    background:#00ff00;
+}
+#pink
+{
+    background: #ff00ff;
+}
+#orange
+{
+    background: #ff6200;
+}
+#gray
+{
+    background: #808080;
+}
+#brown
+{
+    background: #D2691E;
+}
+#purple
+{
+    background: #800080;
+}
+#white
+{
+    background: #fff;
+}

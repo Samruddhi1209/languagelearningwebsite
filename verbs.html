@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>verbs</title>
+        <link rel="stylesheet" type="text/css" href="verbs.css">
+    </head>
+    <body>
+        <div class="nav">
+            <h2>VERBS</h2>
+            <ul id="item">
+                <li><a href="#">INTRODUCTION</a></li>
+                <li><a href="#">VERB-TENSE</a></li>
+            </ul>
+        </div>
+
+        <div class="back">
+          <div class="overlay"></div>
+        </div>
+
+        <div class="mid">
+            <h1>VERBS</h1>
+            <div class="image-container">
+                <div class="image-item" onclick="playAudio('file:///D:/SAMRUDDHI/SOFTWARES/Visual%20Studio%20code/Learning%20language/language/audio/eat.mp3')">
+                    <img src="./images/eat.png" alt="Image 1">
+                    <p class="image-description">EAT</p>
+                </div>
+                <div class="image-item" onclick="playAudio('file:///D:/SAMRUDDHI/SOFTWARES/Visual%20Studio%20code/Learning%20language/language/audio/brush.mp3')">
+                    <img src="images/brush.avif" alt="Image 2">
+                    <p class="image-description">BRUSH</p>
+                </div>
+                <div class="image-item" onclick="playAudio('/audio/run.mp3')">
+                    <img src="images/run.avif" alt="Image 3">
+                    <p class="image-description">RUN</p>
+                </div>
+                <div class="image-item" onclick="playAudio('audio/dance.mp3')">
+                    <img src="images/dance.jpg" alt="Image 2">
+                    <p class="image-description">DANCE</p>
+                </div>
+            </div>
+             <div>
+                <p id="my-para">Words which tell us about the action people or animal do. Such action words are called verbs.
+                </p>
+             </div>
+            <audio id="audio" controls style="display: none;">
+                <source src="" type="audio/mpeg">
+            </audio>
+        
+            <script>
+                function playAudio(audioFile) {
+                    const audioElement = document.getElementById('audio');
+                    const sourceElement = audioElement.querySelector('source');
+                    sourceElement.src = audioFile;
+                    audioElement.load();
+                    audioElement.play();
+                }
+            </script>
+             <script src="script.js"></script>
+
+        </div>
+           <div class="tenses">
+            <div class="one">
+                <h3>What is verb tense?</h3>
+                <h6>A verb tense tells us when the action happened - an action or past state of being (i.e. a to be verb)</h6>
+                <p>There are 3 simple verb tenses we are going to learn about:</p>
+                  <h4> #1 - Present tense </h4>
+                   <h4>#2 - Past tense </h4>
+                  <h4>#3 - Future tense </h4>
+            <br>
+            <h5>PAST PRESENT    FUTURE</h5>
+
+             <h5><______________|_____________></h5>
+            </div>
+
+            <div class="two">
+                <h3>HINT! What’s a to be verb? Here’s a reminder:</h3>
+                <img src="images/tenses.png.crdownload" alt="tenses" width="500" height="400">
+
+            </div>
+           </div>
+        
+           <div class="simplepast">
+            <div class="three">
+                <h3>Simple Past Tense :</h3>
+                <h6>Past tense means something that already happend or a past state of being.</h6>
+                  <h4> How do you make a verb past tense?</h4>
+                   <h5>For most verbs,you add the ending -D or -ED. </h4>
+            <br>
+            </div>
+
+            <div class="four">
+                <img src="images/simplepast.png" alt="tenses" width="500" height="400">
+
+            </div>
+</div>
+            <div class="simplepastfillintheblanks">
+                <div class="five">
+                    <h3>Fill in the blanks with the past form of verb given in brackets.</h3>
+                    <p class="question-paragraph">1. The player fell down and <span class="blank" contenteditable="true"></span> (scream/screamed) in pain.</p>
+                    <br>
+                    <p class="question-paragraph">2. We <span class="blank" contenteditable="true"></span>(watch / watched) the film yesterday.</p>
+                    <br>
+                    <p class="question-paragraph">3. The watchman went into the house and <span class="blank" contenteditable="true"></span> (fill / filled) the bucket with water.</p>
+                    <br>
+                    <p class="question-paragraph">4. We climed the tree and<span class="blank" contenteditable="true"></span>(pick/ picked) all the guavas.</p>
+                    <br>
+                    <p class="question-paragraph">5. I woke up late yesterday.I quickly<span class="blank" contenteditable="true"></span>(brush/ brushed) my teeth and got ready for </p>
+                    <br>
+                    <p class="question-paragraph">6. Last year, I<span class="blank" contenteditable="true"></span>(travel/ travelled) to France</p>
+                    <br>
+
+                    <button onclick="checkAnswers()">Check Answers</button>
+                    <div id="feedback"></div>
+                
+                </div>
+               
+                <div class="six">
+                    <img src="/images/movie.jpg" alt="movie" class="movie">
+                </div>
+            
+
+    <script src="verbs.js"></script>
+                </div>
+
+                <div class="simplepresent">
+                    <div class="seven">
+                        <h3>Simple Present Tense :</h3>
+                        <h6>Past tense means something is happening right now.</h6>
+                        <h7>It can alse mean things that repeatedly happens or general things that you do, like a routine or a habit.</h7>
+                    <br>
+                
+                    </div>
+        
+                    <div class="eight">
+                        <img src="images/simplepresent.png" alt="tenses" width="500" height="400">
+                    </div>
+    </body>
+</html>
+

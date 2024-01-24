@@ -1,0 +1,75 @@
+
+body{
+
+    background-size: cover;
+    background-image: url(images/n2.avif);
+    place-items: center;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #250eed; 
+    text-align: center;
+    position: absolute;
+    top: -10px;
+    left: center;
+    padding: 10px;
+    font-size: 50px;
+}
+
+/* styles.css */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8%;
+}
+
+.image-item {
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image-item img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+}
+
+.image-description {
+    font-size: 20px;
+    margin-top: 10px;
+    font-style: bold;
+}
+
+/* Style for audio player */
+#audio {
+    width: 100%;
+    height: 30px;
+}
+
+#my-para{
+    color: blue;
+    font-size: 25px;
+    margin-top: 300px;
+    margin-left: -830px;
+
+}
+
+#para{
+    color: rgb(6, 6, 12);
+    font-size: 25px;
+    margin-top: 360px;
+    margin-left: -660px;
+
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Colors</title>
+        <link rel="stylesheet" href="vocacolors.css">
+    </head>
+    <body>
+        <div class="bg-wrapper">
+            <a onclick="changeColor(0)" id="red">#ff0000</a>
+            <a onclick="changeColor(1)" id="blue">#0000ff</a>
+            <a onclick="changeColor(2)"  id="black">#000000</a>
+            <a onclick="changeColor(3)" id="yellow">#ffff00</a>
+            <a onclick="changeColor(4)"  id="green">#00ff00</a>
+            <a onclick="changeColor(5)"  id="pink">#ff00ff</a>
+            <a onclick="changeColor(6)" id="orange">#ff6200</a>
+            <a onclick="changeColor(7)"  id="white">#fff</a>
+            <a onclick="changeColor(8)"  id="gray">#808080</a>
+            <a onclick="changeColor(9)" id="brown">#D2691E</a>
+            <a onclick="changeColor(10)"  id="purple">#800080</a>
+        </div> 
+        <div class="banner-text">
+            <h2>Learn Colors!</h2>
+        </div>
+
+        <audio id="audioRed" src="./audio/red.mp3"></audio>
+        <audio id="audioBlue" src="./audio/blue.mp3"></audio>
+        <audio id="audioBlack" src="./audio/black.mp3"></audio>
+        <audio id="audioYellow" src="./audio/yellow.mp3"></audio>
+        <audio id="audioGreen" src="./audio/green.mp3"></audio>
+        <audio id="audioPink" src="./audio/pink.mp3"></audio>
+        <audio id="audioOrange" src="./audio/orange.mp3"></audio>
+        <audio id="audioWhite" src="./audio/white.mp3"></audio>
+        <audio id="audioGray" src="./audio/gray.mp3"></audio>
+        <audio id="audioBrown" src="./audio/brown.mp3"></audio>
+        <audio id="audioPurple" src="./audio/purple.mp3"></audio>
+       
+
+       <img id="colorImage" src="" alt="Color Image" style="position: absolute; width: 200px; height: 200px; top: 20px; right: 20px;">
+        <script>
+            const colors = ['#ff0000', '#0000ff','#000000', '#ffff00','#00ff00','#ff00ff','#ff6200','#fff','#808080','#D2691E','#800080']; // Add more color codes
+            const images = ["/images/red.png", 
+                            "/images/blue.png",
+                            "/images/black.png",
+                            "/images/yellow.png",
+                            "/images/green.png",
+                            "/images/pink.png",
+                            "/images/orange.png",
+                            "/images/white.png",
+                            "/images/gray.png",
+                            "/images/brown.png",
+                            "/images/purple.png"
+                          ]; // Add corresponding image URLs
+                          let currentAudio = null;
+    
+            function changeColor(index){
+                if (currentAudio) {
+                currentAudio.pause();
+            }
+                document.body.style.backgroundColor = colors[index];
+                document.getElementById('colorImage').style.width = '450px'; // Set the width
+        document.getElementById('colorImage').style.height = '450px'; // Set the height
+        document.getElementById('colorImage').style.top = '200px'; // Set the top position
+        document.getElementById('colorImage').style.right = '450px'; 
+        document.getElementById('colorImage').style.left = '50'; 
+                document.getElementById('colorImage').src = images[index];
+
+                if (index === 0) {
+                    currentAudio = document.getElementById('audioRed');
+            } else if (index === 1) {
+                currentAudio = document.getElementById('audioBlue');
+            }  
+            else if (index === 2) {
+                currentAudio = document.getElementById('audioBlack');
+            } 
+            else if (index === 3) {
+                currentAudio = document.getElementById('audioYellow');
+            } 
+            else if (index === 4) {
+                currentAudio = document.getElementById('audioGreen');
+            } 
+            else if (index === 5) {
+                currentAudio =  document.getElementById('audioPink');
+            } 
+            else if (index === 6) {
+                currentAudio =  document.getElementById('audioOrange');
+            } 
+            else if (index === 7) {
+                currentAudio =  document.getElementById('audioWhite');
+            } 
+            else if (index === 8) {
+                currentAudio =  document.getElementById('audioGray');
+            } 
+            else if (index === 9) {
+                currentAudio =  document.getElementById('audioBrown');
+            } 
+            else if (index === 10) {
+                currentAudio =  document.getElementById('audioPurple');
+            } 
+            currentAudio.play();
+            }
+        </script>
+
+          
+    </body>
+</html>

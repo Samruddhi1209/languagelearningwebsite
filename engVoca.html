@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <meta charset="UTF-8=">
+    <title>Vocabulary</title>
+    <link rel="stylesheet" type="text/css" href="engVoca.css">
+    <a href="vocacolors.html"> <!-- Destination URL for the first card -->
+      <div class="card">
+        <div class="imgBx">
+          <img src="./images/colors.png">
+        </div>
+        <div class="content">
+          <div class="details">
+            <h2><img src="./images/colors1.png" class="center-image "width="120" height="120"></h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    <a href="vocafruits.html"> <!-- Destination URL for the second card -->
+      <div class="card">
+        <div class="imgBx">
+          <img src="./images/fruits.png">
+        </div>
+        <div class="content">
+          <div class="details">
+            <h2><img src="./images/fruits1.png" class="center-image" width="120" height="120"></h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    <a href="vocaanimals.html"> <!-- Destination URL for the third card -->
+      <div class="card">
+        <div class="imgBx">
+          <img src="./images/animals.png">
+        </div>
+        <div class="content">
+          <div class="details">
+            <h2><img src="./images/animals1.png" class="center-image" width="120" height="120"></h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    <a href="vocaemo.html"> <!-- Destination URL for the fourth card -->
+      <div class="card">
+        <div class="imgBx">
+          <img src="./images/emo.png">
+        </div>
+        <div class="content">
+          <div class="details">
+            <h2><img src="./images/emo1.png" class="center-image" width="120" height="120"></h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    <style>
+      .card {
+        margin: 15px;
+      }
+    </style>
+    
+    <style>
+     
+       .button {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #404040;
+}
+
+     
+      </style>
+  </head>
+  <body>
+    <div class="container" style="padding: 10px; display: flex;"></div>
+   <!--<div class="button" style="background-color: #404040;" onclick="playSound(); playMusic();"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" height="100%" width="100%"><path id="Union" fill="#ffffff" fill-rule="evenodd" d="M12.781.23a1.227 1.227 0 0 0-.555.02h-.006L4.587 2.369a1.227 1.227 0 0 0-.905 1.177V9.04a2.477 2.477 0 1 0 1.5 2.277V6.076l7.09-1.97V6.57a2.477 2.477 0 1 0 1.5 2.345V1.402a1.226 1.226 0 0 0-.99-1.172Z" clip-rule="evenodd"></path></svg></div>-->
+   <div class="button" style="background-color: #404040; position: absolute; top: 10px; right: 10px;" onclick="playSound(); playMusic();">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" height="25" width="25" >
+      <path id="Union" fill="#ffffff" fill-rule="evenodd" d="M12.781.23a1.227 1.227 0 0 0-.555.02h-.006L4.587 2.369a1.227 1.227 0 0 0-.905 1.177V9.04a2.477 2.477 0 1 0 1.5 2.277V6.076l7.09-1.97V6.57a2.477 2.477 0 1 0 1.5 2.345V1.402a1.226 1.226 0 0 0-.99-1.172Z" clip-rule="evenodd"></path>
+    </svg>
+  </div>
+   
+  
+    <script>
+      var audio = new Audio('music.mp3');
+      var isPlaying = false;
+    
+      function playMusic() {
+          audio.volume = 0.3;
+        audio.loop = true;
+        if (isPlaying) {
+          audio.pause();
+          isPlaying = false;
+        } else {
+          audio.play();
+          isPlaying = true;
+        }
+      }
+      </script>
+    
+       <script>
+        function playSound() {
+        var audio = new Audio('clickbutton.mp3');
+        audio.play();
+      }
+    </script>
+    
+  
+    
+    
+    <section>
+      <div class="wave wave1 "></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </section>
+  </body>
+</html>
